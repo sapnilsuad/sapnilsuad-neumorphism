@@ -1,0 +1,107 @@
+/* Responsive Code */
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {  
+  
+    /* CSS */
+    
+  }
+  
+  /* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+  
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    
+    /* CSS */
+    
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */ 
+  
+@media (min-width: 760px) and (max-width: 1024px) {
+ 
+.banner .left{   
+  padding: 100px 0px 20px 20px;      
+}
+.banner .left h1 {
+  font-size: 38px;  
+}
+
+
+    
+}
+  
+@media (min-width: 300px) and (max-width: 600px){
+
+
+  .main{  
+    width: 90vw;      
+    margin: auto;
+    height: 1400px;  
+    margin-top: 4vh;   
+    margin-bottom: 4vh;       
+  }
+  .banner{
+    display: block;
+  }
+  .banner .left{
+    padding: 50px 20px 20px 20px; 
+  }
+  .banner .left h1{
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  .btn-1{
+    display: block;
+    margin: auto;
+  }
+  .banner .right { 
+    min-height: 400px;
+  } 
+  .social {
+    margin-left: 25px;
+  }
+  .bar-btn ul{
+    display: none; 
+  }
+  .navbar .bar-btn i{
+    line-height: 54px;  
+    font-size: 22px; 
+    cursor: pointer; 
+    display: block;  
+  }  
+  .side-nav{
+    z-index: 2;
+    display: block;
+  }
+  .items {
+    padding: 100px 0px;  
+  } 
+  .side-nav .top i {
+    line-height: 10vh;
+    font-size: 25px;
+    cursor: pointer;
+  }
+
+
+
+ 
+
+
+}
+
+
+
+
+
+

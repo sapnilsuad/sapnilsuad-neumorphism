@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">  
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">         
+    <title>Neumorphism Landing Page</title>      
+</head>
+<body>
+    <div class="main"> 
+        <div class="navbar"> 
+            <div class="logo">
+                <h1>LOGO</h1>
+            </div>
+            <div class="bar-btn">   
+                <ul>
+                    <li>Home</li>      
+                    <li>About</li>
+                    <li>BLog</li>  
+                    <li>Contact</li>    
+                </ul> 
+                <i class="fa fa-bars" onclick="openIt();"></i>     
+            </div>
+        </div>  
+        <div class="side-nav" id="one">   
+            <div class="top">
+                <i class="fa fa-close" onclick="closeIt();"></i>   
+            </div>       
+            <div class="items">
+                <ul>
+                    <li>Home</li>      
+                    <li>About</li>
+                    <li>BLog</li>  
+                    <li>Contact</li>   
+                </ul>
+            </div>
+        </div>
+
+        <div class="banner">    
+            <div class="left">   
+                <h1>Lorem ipsum dolor</h1>    
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quidem 
+                    aperiam quo necessitatibus blanditiis dolor vel eveniet eos voluptates 
+                    fuga placeat sint, expedita nesciunt quaerat, hic nobis impedit, optio 
+                    at sapiente quasi ea aliquam? Temporibus neque dolorum ipsum exercitationem 
+                    beatae, ut eius laudantium earum porro perspiciatis consequatur et aperiam 
+                    ducimus fuga qui commodi voluptate totam error assumenda ea veniam incidunt. 
+                    Cum ipsa labore nemo harum accusantium excepturi provident possimus assumenda 
+                    nisi amet! Autem suscipit nostrum nisi! Molestias ex perferendis quibusdam 
+                    labore error accusantium repellendus voluptatem quasi iusto aspernatur debitis 
+                    enim libero quaerat, delectus, praesentium obcaecati, nulla mollitia recusandae 
+                    quae fugit.  
+                </p> 
+                <button class="btn-1">Learn More</button>    
+            </div> 
+            <div class="right"> 
+                <img src="assets/img.png" alt="img here">     
+            </div>
+        </div>  
+        <div class="social">  
+            <ul>
+                <li><i class="fa fa-facebook"></i></li>  
+                <li><i class="fa fa-instagram"></i></li>
+                <li><i class="fa fa-twitter"></i></li>
+                <li><i class="fa fa-youtube"></i></li>    
+            </ul>
+        </div>
+    </div>
+
+
+
+    <script>
+        
+        var x = document.getElementById("one");    
+
+        x.style.marginRight = '-200px';    
+
+        function closeIt(){  
+
+        x.style.marginRight = '-200px';   
+        x.style.transition = '0.3s';     
+        
+        }
+        function openIt(){
+            x.style.marginRight = '0px';   
+            x.style.transition = '0.3s'; 
+        }
+
+
+    </script>
+
+</body>
+</html>

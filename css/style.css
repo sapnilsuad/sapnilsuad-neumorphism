@@ -1,0 +1,207 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+body{
+    background: #e0e0e0;    
+    overflow-x: hidden;  
+}
+.main{  
+    width: 90vw;   
+    margin: auto;
+    height: 88vh;
+    margin-top: 6vh;    
+    border-radius: 20px;  
+    background: #e0e0e0;  
+    box-shadow:  9px 9px 14px #cecece,
+     -9px -9px 14px #f2f2f2;
+    overflow: hidden;  
+    position: relative;
+}  
+.navbar{
+    padding: 5px 40px;  
+    background: rgba(255, 192, 203, .6);   
+    display: flex;
+    justify-content: space-between; 
+    overflow: hidden;
+    z-index: -1; 
+}
+.navbar h1{
+    font-family: 'BrowalliaUPC';
+    font-size: 42px;    
+    letter-spacing: 2px; 
+    color: #c53535; 
+}
+.navbar .bar-btn {
+    height: 50px; 
+    display: flex;   
+}
+.navbar .bar-btn i{
+    line-height: 54px;  
+    font-size: 22px; 
+    cursor: pointer; 
+    display: none; 
+}
+.navbar .bar-btn ul li{ 
+    list-style: none;
+    display: inline-block;  
+    font-family: 'BrowalliaUPC'; 
+    color: #c53535;
+    font-size: 28px;  
+    text-transform: uppercase; 
+    line-height: 6vh; 
+    padding-right: 25px;  
+    cursor: pointer; 
+}
+.navbar .bar-btn ul li:hover{ 
+    color: #E21C1C;  
+    text-shadow: 4px 4px 5px #c53535;  
+    transition: all .3s; 
+}
+.side-nav{
+    position: absolute; 
+    background: rgba(255, 192, 203, 1);    
+    height: 100%; 
+    float: right;      
+    top: 0;  
+    right: 0;
+    z-index: 1;    
+    width: 150px;  
+    text-align: center;
+    display: none; 
+}
+.side-nav .top i{
+    line-height: 7vh;
+    font-size: 22px;
+    cursor: pointer; 
+} 
+.top{ 
+    height: 7vh;  
+}
+.items{
+    height: 81vh;   
+    padding: 160px 0px;  
+}
+.items ul{
+    list-style: none;  
+}
+.items ul li{
+    padding: 25px 0;  
+    font-family: 'BrowalliaUPC';
+    font-size: 30px; 
+    text-transform: uppercase;   
+    cursor: pointer;
+    color: #c53535;
+}
+.items ul li::after{
+    content: '';
+    height: 2px;
+    width: 0;
+    display: block;
+    margin: auto;
+    background: #fff;
+}
+.items ul li::before{
+    content: '';
+    height: 2px;
+    width: 0;
+    display: block;
+    margin: auto;
+    background: #fff;
+}
+.items ul li:hover::after, .items ul li:hover::before{ 
+    width: 100%; 
+    transition: ease-in-out .3s;   
+} 
+.banner{
+    display: flex; 
+}
+.banner .left{  
+    flex-basis: 50%;  
+    padding: 80px 20px 20px 30px;    
+    position: relative;
+}
+.banner .left h1{
+    font-family: 'BrowalliaUPC';
+    text-transform: uppercase; 
+    font-size: 52px;
+    margin-bottom: 30px;   
+    color: #E21C1C;  
+}
+.banner .left p{
+    font-family: 'calibri'; 
+    font-size: 18px; 
+    line-height: 20px;
+    text-align: justify;  
+    margin-bottom: 80px; 
+    color: #501f1f;
+}
+.banner .right{
+    flex-basis: 50%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 750px;  
+} 
+.banner .right img{ 
+    width: 100%;   
+}
+.btn-1{
+    padding: 10px 60px;
+    font-size: 22px;
+    font-family: 'Dotum'; 
+    border: none; 
+    box-shadow: 9px 9px 14px #cecece,
+                -9px -9px 14px #f2f2f2; 
+    background: #e0e0e0; 
+    border-radius: 20px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden; 
+    z-index: 1;
+    color: #501f1f;
+}
+.btn-1::before{
+    content: '';
+    top: 0;
+    left: 0;
+    display: block;
+    position: absolute;
+    background: pink; 
+    width: 0%; 
+    height: 100%;  
+    z-index: -1;
+}
+.btn-1:hover::before{
+    width: 100%; 
+    height: 100%;
+    transition: ease-in-out .5s;   
+}
+.social{
+    position: absolute; 
+    bottom: 0;
+    left: 0;
+    margin-left: 20px;
+    margin-bottom: 20px; 
+}
+.social ul li{
+    list-style: none;
+    display: inline-block;  
+    padding-left: 15px;
+}
+.social ul li i{
+    width: 45px;
+    height: 45px;   
+    background: pink;  
+    font-size: 20px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer; 
+    color: #c53535; 
+}
+.social ul li:hover{
+    transform: scale(1.2);
+    transition: all .3s;   
+}
